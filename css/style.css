@@ -312,7 +312,8 @@ header .intro-text .intro-heading {
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 25px;
-	margin: 20px 100px 60px 100px;
+	margin: 20px 100px 20px 100px;
+	text-align: center;
 }
 
 /*--------------------
@@ -337,6 +338,7 @@ header .intro-text .intro-heading {
 	font-weight: 300;
 	line-height: 22px;
 	color: #969696;
+	text-align: left;
 }
 
 .ot-circle {
@@ -698,7 +700,7 @@ figure.effect-bubba:hover p {
 }
 
 .advisor-list-item {
-	text-align: center;
+	text-align: left;
 	margin: 0px 50px 30px;
 	background-color: #fff;
 	
@@ -1080,3 +1082,9 @@ and (max-width : 480px) {
   }
 
   .skillst {margin-top: 30px;}
+
+  .selfooter a{
+	font-size: 0.3rem;
+	color: #222222;
+	text-decoration:none ;
+	 }
