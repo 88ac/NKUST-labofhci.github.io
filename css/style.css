@@ -500,7 +500,7 @@ figure.effect-bubba:hover p {
 --------------------*/
 
 .light-bg {
-	background-color: #f8f8f8;
+	background-color: #f1f1f1;
 }
 
 .dark-bg {
@@ -607,12 +607,17 @@ figure.effect-bubba:hover p {
 /*--------------------
 4.6. Team
 --------------------*/
-
+.team-wrap-card{
+	position: relative;
+	box-shadow: 0px 4px 10px #e3e3e3;
+}
 .team-item {
+	position: relative;
 	text-align: center;
-	background-color: #fff;
+	background-color: #f8f8f8;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .team-item h3 {
@@ -623,7 +628,7 @@ figure.effect-bubba:hover p {
 }
 
 .team-item .team-position {
-	color: #989898;
+	color: #cfcccf;
 	font-size: 24px;
 	margin: 15px 0 10px;
 	text-transform: uppercase;
@@ -634,12 +639,29 @@ figure.effect-bubba:hover p {
 .team-item p {
     font-size: 20px;
     font-weight: 400;
-    color: #292929;
+    color: #333231;
     padding: 5px 10px 5px 10px;
 }
 
- 
+ .team-item:hover{
+ 	position: absolute;
+ 	background-color: #333231;
+ 	border-bottom: 1rem solid #23ad21;
+ 	box-shadow: 0px 2px 5px #9b9b9b;
+ }
 
+.team-item:hover h3{
+	color: #23ad21;
+}
+.team-item:hover h4{
+	color: #fed74f;
+}
+.team-item:hover div{
+	color: grey;
+}
+.team-item:hover p{
+	color: #ffffff;
+}
 
 .advisor-item {
 	text-align: center;
@@ -762,6 +784,44 @@ figure.effect-bubba:hover p {
     color: #292929;
     padding: 5px 10px 5px 10px;
 	text-align: left;
+}
+
+/* ADVISOR btn */
+.adv-button {
+  align-items: center;
+  appearance: none;
+  background-color: #f1f1f1;
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #363636;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  height: 3rem;
+  justify-content: center;
+  line-height: 1.5;
+  padding: calc(.5em - 1px) 1em;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.adv-button:active {
+  border-color: #4a4a4a;
+  outline: 0;
+}
+
+.adv-button:hover {
+  text-decoration: none;
+  border-color: #b5b5b5;
+  background-color: #ffffff;
 }
 
 /*--------------------
@@ -975,10 +1035,11 @@ and (max-width : 480px) {
 /*---------- c. experience -----------*/
 .wrap-card {
 	position: relative;
-	box-shadow: 0px 0px 0px #818181;
+	box-shadow: 0px 4px 10px #e3e3e3;
 	transition: all 0.2s ease 0s;
-	-webkit-transform: translateY(0px) translateX(0px);
+	/*-webkit-transform: translateY(0px) translateX(0px);*/
   }
+
   .wrap-card:before,
   .wrap-card:after {
 	display: inline-block;
@@ -1001,19 +1062,19 @@ and (max-width : 480px) {
 	-webkit-transform-origin: 100% 0;
   }
   .wrap-card:hover {
-	box-shadow: 20px 20px 0px #818181;
-	-webkit-transform: translateY(-10px) translateX(-10px);
-	transition: all 0.2s ease 0.4s;
+	box-shadow: 0px 4px 10px #818181;
+	/*-webkit-transform: translateY(-10px) translateX(-10px);
+	transition: all 0.2s ease 0.4s;*/
   }
   .wrap-card:hover:after,
   .wrap-card:hover:before {
 	-webkit-transform: scaleX(1);
   }
-  .card {
+ 	.card {
 	background: #ffffff;
 	padding: 30px 35px 45px 35px;
 	margin-bottom: 30px;
-	border: 1px solid rgba(129, 129, 129, 0.1);
+	border: 1px solid rgba(129, 129, 129, 0.1);*/
   }
   .card:before,
   .card:after {
@@ -1024,7 +1085,7 @@ and (max-width : 480px) {
 	height: 100%;
 	background: #818181;
 	-webkit-transform: scaleY(0);
-	transition: all 0.2s ease 0.2s;
+	transition: all 0.2s ease 0.2s;*/
   }
   .card:before {
 	top: 0;
@@ -1040,9 +1101,10 @@ and (max-width : 480px) {
   .card:hover:before {
 	-webkit-transform: scaleY(1);
   }
+
 /*----- background ------*/
 .grey-bg {
-	background: #f6f6f6;
+	background: #f8f8f8;
 	padding: 120px 0;
 	display: block;
   }
@@ -1058,6 +1120,9 @@ and (max-width : 480px) {
 	display: block;
   }
 
+  .nohover{
+  	pointer-events: none;
+  }
   /*---- span -----*/
 .title-small span { position: relative;}
 .title-small span:after {
@@ -1081,6 +1146,7 @@ and (max-width : 480px) {
   left: 0;
 }
 .year {
+	color: #292b37;
 	font-size: 26px;
 	font-weight: 500;
 	margin-bottom: 10px;
