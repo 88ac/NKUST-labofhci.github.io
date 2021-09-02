@@ -614,45 +614,47 @@ figure.effect-bubba:hover p {
 .team-wrap-card{
 	position: relative;
 	box-shadow: 0px 4px 10px #e3e3e3;
-}
-.team-item {
+	width: auto;
+   }
+   .team-item {
 	position: relative;
+	justify-content: center;
 	text-align: center;
 	background-color: #f8f8f8;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 30px;
-}
-
-.team-item h3 {
+   }
+   
+   .team-item h3 {
 	font-size: 36px;
 	font-weight: 800;
 	text-transform: uppercase;
 	color: #2D2D2D;
-}
-
-.team-item .team-position {
+   }
+   
+   .team-item .team-position {
 	color: #cfcccf;
 	font-size: 24px;
 	margin: 15px 0 10px;
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 2px;
-}
-
-.team-item p {
-    font-size: 20px;
-    font-weight: 400;
-    color: #333231;
-    padding: 5px 10px 5px 10px;
-}
-
- .team-item:hover{
- 	position: absolute;
- 	background-color: #333231;
- 	border-bottom: 1rem solid #23ad21;
- 	box-shadow: 0px 2px 5px #9b9b9b;
- }
+   }
+   
+   .team-item p {
+	   font-size: 20px;
+	   font-weight: 400;
+	   color: #333231;
+	   padding: 5px 10px 5px 10px;
+   }
+   
+	.team-item:hover{
+	 margin-bottom: 20px;
+	 background-color: #333231;
+	 border-bottom: 1rem solid #23ad21;
+	 box-shadow: 0px 2px 5px #9b9b9b;
+	}
 
 .team-item:hover h3{
 	color: #23ad21;
@@ -1033,7 +1035,11 @@ and (max-width : 480px) {
 	margin-top: 7px;
 	font-size: 20px;
 }
-
+.col-md-3{
+	margin: auto;
+	width: 75%;
+	height: 75%;
+}
 }
 
 /*---------- c. experience -----------*/
@@ -1041,6 +1047,9 @@ and (max-width : 480px) {
 	position: relative;
 	box-shadow: 0px 4px 10px #e3e3e3;
 	transition: all 0.2s ease 0s;
+	width: auto;
+	height: auto;
+	text-align: center;
 	/*-webkit-transform: translateY(0px) translateX(0px);*/
   }
 
@@ -1049,8 +1058,10 @@ and (max-width : 480px) {
 	display: inline-block;
 	position: absolute;
 	content: " ";
-	width: 100%;
+	width: auto;
 	height: 3px;
+	align-content: center;
+	
 	background: #818181;
 	-webkit-transform: scaleX(0);
 	transition: all 0.2s ease;
