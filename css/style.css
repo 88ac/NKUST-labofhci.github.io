@@ -93,7 +93,7 @@ ul li {
     list-style: none;
     padding-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 23px;
     letter-spacing: 0.2px;
@@ -238,6 +238,22 @@ header .intro-text {
 		padding-bottom: 230px;
     }
 }
+@media (max-width: 400px) {
+	header .intro-text .intro-lead-in {
+	   font-size: 16px;
+	   line-height: 20px;
+	   margin-top: 200px;
+	}
+   }
+
+   @media (max-width: 400px) {
+	header .intro-text .intro-heading {
+	 line-height: 45px;
+	 font-size: 40px;
+	 margin-top:10px;
+	 margin-bottom: 50px;
+	}
+   }
 
 header .intro-text .intro-lead-in {
 	display: inline-block;
