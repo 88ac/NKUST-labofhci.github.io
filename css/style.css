@@ -1081,7 +1081,7 @@ and (max-width : 480px) {
 	align-content: center;
 	
 	background: #818181;
-	-webkit-transform: scaleX(0);
+	-webkit-transform: scaleX(1);
 	transition: all 0.2s ease;
   }
   .wrap-card:before {
@@ -1107,7 +1107,7 @@ and (max-width : 480px) {
 	background: #ffffff;
 	padding: 30px 35px 45px 35px;
 	margin-bottom: 30px;
-	border: 1px solid rgba(129, 129, 129, 0.1);*/
+	border: 1px solid rgba(129, 129, 129, 0.1);
   }
   .card:before,
   .card:after {
@@ -1118,7 +1118,7 @@ and (max-width : 480px) {
 	height: 100%;
 	background: #818181;
 	-webkit-transform: scaleY(0);
-	transition: all 0.2s ease 0.2s;*/
+	transition: all 0.2s ease 0.2s;
   }
   .card:before {
 	top: 0;
