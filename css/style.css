@@ -216,6 +216,8 @@ section ul li:before {
 
 header {
 	background-image: url(../images/homepage2.jpg);
+	background-color: rgba(0, 0, 0, 0.1);
+	background-blend-mode: multiply;
 	background-repeat: none;
 	background-attachment: page-scroll;
 	background-position: center center;
@@ -234,7 +236,7 @@ header .intro-text {
 
 @media (min-width: 768px) {
 	header .intro-text {
-		padding-top: 500px;
+		padding-top: 400px;
 		padding-bottom: 230px;
     }
 }
@@ -301,7 +303,9 @@ header .intro-text .intro-heading {
 /*--------------------
 4. Sections
 --------------------*/
-
+.section-title {
+	margin-top: 50px;
+}
 .section-title h2 {
 	font-size: 34px;
 	text-transform: uppercase;
@@ -588,6 +592,8 @@ figure.effect-bubba:hover p {
 .owl-portfolio-item {
 	text-align: center;
 	display: inline-block;
+	width: 100%;
+	height: 100%;
 }
 
 .partner-logo {
@@ -1170,7 +1176,7 @@ and (max-width : 480px) {
   }
   .white-bg {
 	background: #ffffff;
-	padding: 120px 0;
+	/* padding: 120px 0; */
 	display: block;
   }
 
